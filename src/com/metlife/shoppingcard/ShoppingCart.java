@@ -1,5 +1,5 @@
 package com.metlife.shoppingcard;
-//created by balaji dinakaran
+//created on dec 21
 public class ShoppingCart {
     public static void main(String[] args) {
 
