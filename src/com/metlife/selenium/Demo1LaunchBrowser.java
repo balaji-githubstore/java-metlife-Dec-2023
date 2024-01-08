@@ -12,6 +12,8 @@ public class Demo1LaunchBrowser {
         WebDriver obj1=new EdgeDriver();
         WebDriver obj2=new ChromeDriver();
 
+        obj1.quit();
+
 //        obj1=new EdgeDriver();
 
         obj1.get("https://www.google.com/");
@@ -23,9 +25,10 @@ public class Demo1LaunchBrowser {
         System.out.println(actualTitle);
 
         //print title from browser2
-//        obj1.f
-
+        String actualTitle2= obj2.getTitle();
+        System.out.println(actualTitle2);
         //quit the browser 2
+        obj2.quit();
 
 
     }
