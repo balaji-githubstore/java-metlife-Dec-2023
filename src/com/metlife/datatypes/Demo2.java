@@ -7,6 +7,7 @@ public class Demo2 {
         //10,20,30,40,50
         int[] numbers=new int[5]; //5*32 bits
 
+        numbers=new int[8];
         numbers[0]=10;
         numbers[1]=20;
         numbers[2]=30;
@@ -40,6 +41,10 @@ public class Demo2 {
 //        arr3[1]='r';
 
 //        System.out.println(arr3);
+
+        int[] arr4={34,34,433,33434};
+
+        System.out.println(arr4.length);
 
     }
 }

@@ -1,5 +1,7 @@
 package com.metlife.employees;
 
+import java.util.ArrayList;
+
 public class EmployeeRunner {
 
 
@@ -12,14 +14,18 @@ public class EmployeeRunner {
         Employee emp2 = new Employee(102,"saul");
         System.out.println(emp2);
         Employee emp3 = new Employee(103.1);
+        Employee emp4=Employee.getEmployeeInstance();
+        Employee emp5=new Employee();
 
-        Employee[] employees=new Employee[3];
-        employees[0]=emp1;
-        employees[1]=emp2;
-        employees[3]=emp3;
 
-        System.out.println(emp2.empName);
-        System.out.println(employees[1].empName);
+        emp1.displayEmployeeRecords();
+        emp4.displayEmployeeRecords();
+
+        Employee.getEmployeeInstance().displayEmployeeRecords();
+
+
+
+
 
         //emp1.empId = -101;
         emp1.empName = "john";
@@ -59,5 +65,25 @@ public class EmployeeRunner {
 
         System.out.println(emp1.getEmpSalary());
 //        System.out.println(emp1.getEmpId());
+
+        Employee[] employees=new Employee[3];
+        employees[0]=emp1;
+        employees[1]=emp2;
+        employees[2]=emp3;
+
+        ArrayList<Employee> lsEmpe=new ArrayList<Employee>();
+        lsEmpe.add(emp1);
+        lsEmpe.add(emp2);
+        lsEmpe.add(emp3);
+
+        System.out.println(emp2.empName);
+        System.out.println(employees[1].empName);
+
+        for(Employee e : employees)
+        {
+            System.out.println(e.empName);
+        }
+
+
     }
 }

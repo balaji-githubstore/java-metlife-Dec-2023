@@ -39,13 +39,13 @@ public class Employee {
         }
     }
 
-//    public Employee()
-//    {
-//        empId=counter;
-//        counter=counter+1;
-//        System.out.println("object created");
-//        System.out.println("launch browser");
-//    }
+    public Employee()
+    {
+        empId=counter;
+        counter=counter+1;
+        System.out.println("object created");
+        System.out.println("launch browser");
+    }
     public Employee(int empId)
     {
         if(empId>100)
@@ -103,6 +103,13 @@ public class Employee {
 
     public void setEmpPerformance(String empPerformance) {
         this.empPerformance = empPerformance;
+    }
+
+
+    public static Employee getEmployeeInstance()
+    {
+        Employee e=new Employee();
+        return e;
     }
 }
 
